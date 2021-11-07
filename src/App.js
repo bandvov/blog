@@ -4,7 +4,6 @@ import "./App.css";
 import axios from "axios";
 const info = JSON.parse(localStorage.getItem("userInfo"));
 function App() {
-  console.log(info);
   const [userInfo, setUserInfo] = useState(info || {});
   const handleSuccess = async (userData) => {
     try {
@@ -49,6 +48,7 @@ function App() {
           onSuccess={handleSuccess}
           onFailure={handleFailure}
           cookiePolicy={"single_host_origin"}
+          redirectUri={process.env.REACT_APP_REDIRECT_URL}
         ></GoogleLogin>
       )}
     </div>
