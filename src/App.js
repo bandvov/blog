@@ -22,7 +22,7 @@ function App() {
     } catch (error) {}
   };
   const handleFailure = (data) => {
-    alert(data);
+    alert(JSON.stringify(data));
   };
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
