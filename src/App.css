@@ -1,0 +1,27 @@
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color: white;
+background-color: rgb(83, 47, 38);
+  flex-direction: column;
+}
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .5rem 2rem;
+  color: white;
+}
+.logout-btn:hover {
+  cursor: pointer;
+  background-color: rgb(219, 232, 236);
+  color: black;
+}
